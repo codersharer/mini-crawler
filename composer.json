@@ -1,0 +1,21 @@
+{
+    "name": "codersharer\/mini_crawler",
+    "description": "a simple crawler can grab simple website fast and easy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Frank.lu",
+            "email": "codersharer@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^8.2",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codersharer\\MiniCrawler\\": "src"
+        }
+    }
+}

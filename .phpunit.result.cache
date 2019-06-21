@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":317:{a:2:{s:7:"defects";a:1:{s:50:"Codersharer\MiniCrawler\Tests\CrawlerTest::testRun";i:1;}s:5:"times";a:3:{s:60:"Codersharer\MiniCrawler\Tests\CrawlerTest::testSetUrlInvalid";d:0.004;s:53:"Codersharer\MiniCrawler\Tests\CrawlerTest::testSetUrl";d:0.001;s:50:"Codersharer\MiniCrawler\Tests\CrawlerTest::testRun";d:0.108;}}}
