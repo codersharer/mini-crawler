@@ -4,9 +4,6 @@ namespace Codersharer\MiniCrawler\Tests;
 
 use Codersharer\MiniCrawler\Crawler;
 use Codersharer\MiniCrawler\Exceptions\InvalidParamsException;
-use GuzzleHttp\Client;
-use GuzzleHttp\Psr7\Response;
-use Mockery;
 use PHPUnit\Framework\TestCase;
 
 class CrawlerTest extends TestCase
@@ -25,7 +22,6 @@ class CrawlerTest extends TestCase
         $this->assertEquals('https://www.baidu.com', $crawler->getUrl());
         $this->assertNotEquals('www.baidu.com', $crawler->getUrl());
     }
-
 
     public function testRun()
     {
