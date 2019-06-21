@@ -9,6 +9,7 @@ use GuzzleHttp\Client;
 class Crawler
 {
     protected $url;
+
     protected $client;
 
     public function __construct()
