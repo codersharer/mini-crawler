@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Codersharer\MiniCrawler;
-
 
 use Codersharer\MiniCrawler\Exceptions\HttpException;
 use Codersharer\MiniCrawler\Exceptions\InvalidParamsException;
@@ -18,11 +16,12 @@ class Crawler
     }
 
     /**
-     * Description:
+     * Description:.
+     *
      * @return Client
+     *
      * @author franklu@soarinfotech.com
      */
-
     public function setClient()
     {
         $this->client = new Client();
@@ -42,7 +41,6 @@ class Crawler
         return $this->url;
     }
 
-
     public function run(): string
     {
         try {
@@ -51,11 +49,11 @@ class Crawler
                 throw new HttpException();
             }
             $content = $response->getBody()->getContents();
+
             return $content;
         } catch (\Exception $e) {
             if ($e instanceof InvalidParamsException) {
                 throw new InvalidParamsException($e->getMessage(), $e->getCode(), $e);
-
             } else {
                 if ($e instanceof HttpException) {
                     throw new HttpException($e->getMessage(), $e->getCode(), $e);
